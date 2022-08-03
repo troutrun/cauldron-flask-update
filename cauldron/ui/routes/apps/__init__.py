@@ -34,5 +34,5 @@ def view(route: str):
     return flask.send_file(
         path,
         mimetype=mimetypes.guess_type(path)[0],
-        cache_timeout=-1
+        max_age=-1
     )
